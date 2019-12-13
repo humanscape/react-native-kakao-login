@@ -160,6 +160,8 @@ RCT_REMAP_METHOD(sendKakaoMessage,
             contentBuilder.title = title;
             contentBuilder.desc = description;
             contentBuilder.imageURL = [NSURL URLWithString:imageURL];
+						contentBuilder.imageWidth = @600;
+						contentBuilder.imageHeight = @600;
             contentBuilder.link = link;
         }];
 

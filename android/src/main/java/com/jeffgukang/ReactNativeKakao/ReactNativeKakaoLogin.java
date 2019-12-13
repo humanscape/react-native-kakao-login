@@ -139,6 +139,8 @@ public class ReactNativeKakaoLogin {
         FeedTemplate params = FeedTemplate.newBuilder(
                 ContentObject.newBuilder(title, imageURL, appLink)
                         .setDescrption(description)
+                        .setImageWidth(600)
+                        .setImageHeight(600)
                         .build()
                 )
                 .addButton(new ButtonObject(buttonMessage, appLink))
